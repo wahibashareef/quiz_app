@@ -1,0 +1,76 @@
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .options button {
+    padding: 5px 8px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(86, 36, 133);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .options button:hover {
+    background-color: #39223f;
+    color: #eecaf7;
+  }
+
+  .options button.selected {
+    background-color: #39223f;
+    color: #eecaf7;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .navigation button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3bac4a;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 8px;
+    outline: none;
+  }
+
+  .navigation button:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+  }
+
+  .navigation button:hover:not(:disabled) {
+    background-color: #297032;
+  }
+  
+  /*Responsive design*/
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+      padding: 15px;
+    }
+
+    .navigation button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+  }

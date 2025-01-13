@@ -1,0 +1,27 @@
+.text {
+    padding: 20px;
+}
+
+.text h1 {
+    font-size: 2rem;
+    color: #39223f;
+}
+.text p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.text .btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3bac4a;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+}
+
+.text .btn:hover {
+    background-color: #297032;
+}
